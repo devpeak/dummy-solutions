@@ -1,0 +1,16 @@
+msg = "I am *Malay*." 
+
+loop 0 to len(msg)
+  x = msg.find("*") # return its index
+    if index != -1 continue
+    else break
+    
+  y = msg.find('*',x+1) #search of * starts from the next index of x in the message
+      if index != -1 continue
+      else break
+
+bold_msg = msg[x+1:y] #slicing -> store the text between asterisk
+
+arr2 = msg[:x] + '<b>' + arr + '</b>' + msg[y+1:]
+
+print(arr2)
